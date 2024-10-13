@@ -2,20 +2,25 @@
   "name": "atma-2024",
   "version": "1.0.0",
   "main": "index.js",
-  "proxy": "http://localhost:5001",
+  "proxy": "http://localhost:5515",
   "scripts": {
-  "start": "node backend/server.js",
-  "server": "nodemon backend/server.js",
-  "client": "npm start --prefix frontend",
-  "dev": "concurrently \"npm run server\" \"npm run client\""
-},
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@vonage/server-sdk": "^3.18.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "express": "^4.21.1"
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
   }
 }
