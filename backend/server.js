@@ -10,8 +10,8 @@ app.use(express.json());
 
 const { Vonage } = require('@vonage/server-sdk')
 const vonage = new Vonage({
-  apiKey: "8b07951b",
-  apiSecret: "w1Xoy6KVhmYs02zk"
+  apiKey: "",
+  apiSecret: ""
 })
 
 
@@ -54,7 +54,7 @@ app.post('/api/submit-form', async(req, res) => {
     const options = {
         method: 'POST',
         headers: {
-            Authorization: 'Bearer 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',
+            Authorization: '<TOKEN>',
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
